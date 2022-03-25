@@ -6,7 +6,8 @@ import java.util.Iterator;
 public class Employees {
 
     private List<Employee> employees;
-    private final String csvFile = "./src/main/resources/empleados.csv";
+//    private final String csvFile = "./src/main/resources/empleados.csv";
+    private final String csvFile = System.getProperty("csvFile");
 
     public Employees() throws Exception {
         this.loadEmployees();
